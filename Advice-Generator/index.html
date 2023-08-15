@@ -6,15 +6,20 @@
     <title>Advice Generator App</title>
   </head>
   <body class="flex items-center justify-center pt-[20%] bg-gray-800">
-    <div class="bg-div__background max-w-xs bg-gray-700 rounded-xl p-4">
+    <div class="max-w-xs md:max-w-2xl bg-gray-700 rounded-xl p-4">
       <header>
-        <h1 class="text-center text-xs font-mono tracking-widest text-green-300 font-bold uppercase p-4">Advice #<span id="input"></span></h1>
+        <h1 class="text-center text-xs font-mono tracking-widest text-green-300 font-bold uppercase p-4">Advice #<span id="advice__input"></span></h1>
       </header>
-      <main id="text__input" class="text-center text-2xl font-mono font-bold text-gray-200 pt-2 pb-4">
+      <main id="text__input" class="text-center text-2xl font-mono font-bold text-gray-200 pt-2 pb-4 w-full md:p-6">
         "It is easy to sit up and take notice, what's 
           difficult is getting up and taking action"
       </main>
-      <img src="images/pattern-divider-mobile.svg" />
+      <div class="w-full flex justify-center">
+        <picture>
+          <source media="(min-width:768px)" srcset="images/pattern-divider-desktop.svg">
+          <img src="images/pattern-divider-mobile.svg" />
+        </picture>
+      </div>
       <div class="flex justify-center">
         <div id="button" class="bg-green-300 w-16 h-16 rounded-full translate-y-12 cursor-pointer hover:shadow-[0px_0px_30px_5px_#6EE7B7]">
           <img src="images/icon-dice.svg" class="translate-x-5 translate-y-5" />
